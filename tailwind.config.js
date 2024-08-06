@@ -1,11 +1,17 @@
 module.exports = {
-  purge: ["./src/**/*.{ts,tsx}"],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    content: ["./src/**/*.{ts,tsx}"],
+    darkMode: 'media', // or 'media' or 'class'
+    theme: {
+        extend: {
+            colors: {
+                yellow: {
+                    'light': '#F3F7FD'
+                }
+            }
+        },
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [],
 };
